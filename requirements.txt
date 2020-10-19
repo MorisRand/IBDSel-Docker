@@ -1,0 +1,6 @@
+colorama
+h5py
+matplotlib
+numpy
+PyYAML
+scipy

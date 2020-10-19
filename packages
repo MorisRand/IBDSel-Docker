@@ -1,0 +1,20 @@
+apt-transport-https
+ca-certificates
+gnupg
+software-properties-common
+curl
+make
+gcc
+g++
+python3-dev
+libx11-dev     
+libxpm-dev
+libxft-dev
+git
+dpkg-dev
+binutils
+libxext-dev
+python3-setuptools
+python3-pip libboost-dev
+python-tk
+libssl-dev
