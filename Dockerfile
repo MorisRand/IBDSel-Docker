@@ -27,3 +27,5 @@ tar -xzf "root_v${ROOT_VERSION}.source.tar.gz" && cd "root-${ROOT_VERSION}/build
 && cmake -DCMAKE_CXX_STANDARD=$CXX_STANDARD -Dbuiltin_xrootd=ON .. \
 && cmake --build . --target install  -- -j$(nproc --all) \
 && cd ../.. && rm -r "root_v${ROOT_VERSION}.source.tar.gz" "root-${ROOT_VERSION}"
+
+ENV LD_LIBRARY_PATH=/usr/local/lib:${LD_LIBRARY_PATH}
