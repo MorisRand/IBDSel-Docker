@@ -29,3 +29,4 @@ tar -xzf "root_v${ROOT_VERSION}.source.tar.gz" && cd "root-${ROOT_VERSION}/build
 && cd ../.. && rm -r "root_v${ROOT_VERSION}.source.tar.gz" "root-${ROOT_VERSION}"
 
 ENV LD_LIBRARY_PATH=/usr/local/lib:${LD_LIBRARY_PATH}
+ENV CMAKE_MODULE_PATH=/usr/local/cmake:${CMAKE_MODULE_PATH}
