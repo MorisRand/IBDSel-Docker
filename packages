@@ -11,6 +11,7 @@ libx11-dev
 libxpm-dev
 libxft-dev
 git
+cmake
 dpkg-dev
 binutils
 libxext-dev
@@ -18,3 +19,7 @@ python3-setuptools
 python3-pip libboost-dev
 python-tk
 libssl-dev
+openssl-dev
+libldap2-dev
+libkrb5-dev
+libavahi-compat-libdnssd-dev
