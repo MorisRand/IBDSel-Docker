@@ -11,7 +11,8 @@ ENV CXX_STANDARD=$cxx_standard
 # install dependencies
 WORKDIR /soft
 COPY requirements.txt packages xrd_packages /tmp/
-RUN apt-get update && apt-get install apt-transport-https ca-certificates gnupg software-properties-common curl \
+RUN apt-get update && apt-get install -y --no-install-recommends apt-transport-https ca-certificates gnupg \
+software-properties-common curl \
 && curl https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | tee /etc/apt/trusted.gpg.d/kitware.gpg /dev/null \
 && curl http://storage-ci.web.cern.ch/storage-ci/storageci.key 2>/dev/null | gpg --dearmor - | tee /etc/apt/trusted.gpg.d/storage-cern-ci.gpg /dev/null \
 && apt-add-repository 'deb https://apt.kitware.com/ubuntu/ focal main' \
