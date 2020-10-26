@@ -22,7 +22,7 @@ software-properties-common curl \
 && python3 -m pip install wheel \
 && python3 -m pip install -r /tmp/requirements.txt \
 && apt remove -y gnupg apt-transport-https ca-certificates \
-&& apt autoremove -y && apt autoclean -y && rm -rf /var/lib/apt/lists/* && rm -rf /tmp/*
+&& apt autoremove -y && apt autoclean -y && rm -rf /var/lib/apt/lists/* && rm -rf * /usr/share/man/* && rm -rf /tmp/*
 
 #build Root
 RUN curl -O "https://root.cern.ch/download/root_v${ROOT_VERSION}.source.tar.gz"  && \

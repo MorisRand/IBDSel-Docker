@@ -15,7 +15,6 @@ python3-pip
 libboost-dev
 python-tk
 libssl-dev
-openssl-dev
 libldap2-dev
 libkrb5-dev
 libavahi-compat-libdnssd-dev
